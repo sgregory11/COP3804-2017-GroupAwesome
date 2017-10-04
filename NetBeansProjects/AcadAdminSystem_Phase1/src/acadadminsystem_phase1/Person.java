@@ -6,21 +6,21 @@ package acadadminsystem_phase1;
 import java.util.Objects;
 
 public class Person {
-    
+
     private String firstName;
     private String lastName;
 
-    
-    public Person (String personFirstName, String personLastName){
+    public Person(String personFirstName, String personLastName) {
         this.firstName = personFirstName;
         this.lastName = personLastName;
     }
+
     /*Copy Contructor??
     /*public Person (Person oldPerson){
         this.firstName = oldpersonFirstName.firstName;
         this.lastName = oldpersonLastName.lastName;
     }*/
-    
+
     public String getFirstName() {
         return firstName;
     }
@@ -28,7 +28,7 @@ public class Person {
     public String getLastName() {
         return lastName;
     }
-    
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -38,9 +38,9 @@ public class Person {
     }
 
     public String toString() {
-        return "Person{" + "firstName=" + firstName + ", lastName=" + lastName + '}';
+        return "Person{" + "First Name: " + firstName + " Last Name: " + lastName + '}';
     }
-    
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
