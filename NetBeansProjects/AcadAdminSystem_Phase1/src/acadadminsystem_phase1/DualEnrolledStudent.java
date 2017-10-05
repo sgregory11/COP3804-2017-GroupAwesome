@@ -30,8 +30,9 @@ public class DualEnrolledStudent extends Student {
      * Copy Constructor
      * @param student
      */
-    public DualEnrolledStudent(DualEnrolledStudent student){
+    public DualEnrolledStudent(DualEnrolledStudent student, Instructor instructor){
         /*super class instruc.. pass student.. if != null*/
+        super(student);
         highSchoolName = student.getHighSchoolName();
         highSchoolGrade = student.getHighSchoolGrade();
     }

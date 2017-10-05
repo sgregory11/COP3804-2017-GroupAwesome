@@ -37,15 +37,15 @@ public class Student extends Person {
     /**
      * Copy Constructor
      *
-     * @param stud
+     * @param student
      */
-    public Student(Student stud) {
+    public Student(Student student) {
         /*super con*/
-        super()
-        studentID = stud.getStudentID();
-        dateOfAdmission = stud.getDateOfAdmission();
-        major = stud.getMajor();
-        coursesTaken = stud.getCoursesTaken();
+        super(student);
+        studentID = student.getStudentID();
+        dateOfAdmission = student.getDateOfAdmission();
+        major = student.getMajor();
+        coursesTaken = student.getCoursesTaken();
     }
 
     /**

@@ -13,8 +13,13 @@ public class Instructor extends Person {
         this.officeHours = officeHours;
     }
     
-    public Instructor (Instructor instructor){
-        
+    /**
+     *
+     * @param instructor
+     */
+    public Instructor (Instructor instructor, Person person){
+        super(person);
+        this.officeHours = instructor.officeHours;
     }
 
     public String getOfficeHours() {

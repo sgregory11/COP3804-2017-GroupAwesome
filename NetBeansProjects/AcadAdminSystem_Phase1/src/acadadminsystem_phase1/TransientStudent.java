@@ -5,6 +5,8 @@ Project: Implementation of the TransientStudent and School classes.
  */
 package acadadminsystem_phase1;
 
+import java.util.ArrayList;
+
 /**
  * This class represents a student whose home institution is another college,
  * but is taking a few courses at this school..
