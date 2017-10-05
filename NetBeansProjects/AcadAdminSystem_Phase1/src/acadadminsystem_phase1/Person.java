@@ -15,11 +15,10 @@ public class Person {
         this.lastName = personLastName;
     }
 
-    /*Copy Contructor??
-    /*public Person (Person oldPerson){
-        this.firstName = oldpersonFirstName.firstName;
-        this.lastName = oldpersonLastName.lastName;
-    }*/
+    public Person (Person oldPerson){
+        this.firstName = oldPerson.firstName;
+        this.lastName = oldPerson.lastName;
+    }
 
     public String getFirstName() {
         return firstName;
