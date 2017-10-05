@@ -12,6 +12,10 @@ public class Instructor extends Person {
         super(personFirstName, personLastName);
         this.officeHours = officeHours;
     }
+    
+    public Instructor (Instructor instructor){
+        
+    }
 
     public String getOfficeHours() {
         return officeHours;
