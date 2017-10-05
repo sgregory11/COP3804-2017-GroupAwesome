@@ -15,9 +15,9 @@ public class Person {
         this.lastName = personLastName;
     }
 
-    public Person (Person oldPerson){
-        this.firstName = oldPerson.firstName;
-        this.lastName = oldPerson.lastName;
+    public Person (Person person){
+        this.firstName = person.firstName;
+        this.lastName = person.lastName;
     }
 
     public String getFirstName() {
@@ -41,17 +41,17 @@ public class Person {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
+    public boolean equals(Object objPerson) {
+        if (this == objPerson) {
             return true;
         }
-        if (obj == null) {
+        if (objPerson == null) {
             return false;
         }
-        if (getClass() != obj.getClass()) {
+        if (getClass() != objPerson.getClass()) {
             return false;
         }
-        final Person other = (Person) obj;
+        final Person other = (Person) objPerson;
         if (!Objects.equals(this.firstName, other.firstName)) {
             return false;
         }
