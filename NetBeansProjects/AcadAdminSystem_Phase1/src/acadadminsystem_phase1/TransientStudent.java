@@ -11,7 +11,7 @@ package acadadminsystem_phase1;
  *
  * @author Jorge Armas
  */
-public class TransientStudent extends Students {
+public class TransientStudent extends Student {
 
     //additional instance field
     private String homeInstitution;

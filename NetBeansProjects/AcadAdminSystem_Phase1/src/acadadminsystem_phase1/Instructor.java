@@ -23,7 +23,7 @@ public class Instructor extends Person {
 
     @Override
     public String toString() {
-        return "Instructor{" + "officeHours=" + officeHours + '}';
+        return "Instructor: " + "officeHours=" + officeHours;
     }
 
 }
