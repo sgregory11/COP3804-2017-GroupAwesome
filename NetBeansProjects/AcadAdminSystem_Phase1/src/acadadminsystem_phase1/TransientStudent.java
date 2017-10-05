@@ -33,8 +33,8 @@ public class TransientStudent extends Student {
      * @param tranObject The object to copy.
      */
     public TransientStudent(TransientStudent tranObj) {
-        super(studObj);
-        if (studObj != null) {
+        super(tranObj);
+        if (tranObj != null) {
             homeInstitution = tranObj.homeInstitution;
 
         }

@@ -14,7 +14,7 @@ public abstract class Person {
         this.firstName = personFirstName;
         this.lastName = personLastName;
     }
-
+/*if person not null*/
     public Person (Person person){
         this.firstName = person.firstName;
         this.lastName = person.lastName;

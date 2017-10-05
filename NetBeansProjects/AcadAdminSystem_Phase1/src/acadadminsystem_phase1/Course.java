@@ -25,6 +25,7 @@ public class Course {
      * @param course
      */
     public Course (Course course){
+        /*if not null course*/
         courseNumber = course.getCourseNumber();
         numberOfCredits = course.getNumberOfCredits();
         instructor = course.getInstructor();

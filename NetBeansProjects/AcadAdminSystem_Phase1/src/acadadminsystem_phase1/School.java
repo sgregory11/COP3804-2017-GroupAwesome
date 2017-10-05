@@ -126,12 +126,7 @@ public class School
         return str;
 
         }
-          
-          
-         
-         
-        
-                
+              
     }
     
 

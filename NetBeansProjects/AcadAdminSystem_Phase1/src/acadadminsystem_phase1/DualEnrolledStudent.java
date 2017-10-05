@@ -31,6 +31,7 @@ public class DualEnrolledStudent extends Student {
      * @param student
      */
     public DualEnrolledStudent(DualEnrolledStudent student){
+        /*super class instruc.. pass student.. if != null*/
         highSchoolName = student.getHighSchoolName();
         highSchoolGrade = student.getHighSchoolGrade();
     }
