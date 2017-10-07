@@ -161,13 +161,16 @@ public class AcadAdminSystem_Phase1 {
         courses.add(course_6);
 
         // set the school's list of students
-        mySchool.setListOfStudents(students);
+        mySchool.setlistOfstudents(students);
+        //mySchool.setListOfStudents(students);
 
         // set the school's list of instructors
-        mySchool.setListOfInstructors(instructors);
+        mySchool.setlistOfInstructors(instructors);
+        //mySchool.setListOfInstructors(instructors);
 
         // set the school's list of courses
-        mySchool.setListOfCourses(courses);
+        mySchool.setlistOfCourses(courses);
+        //mySchool.setListOfCourses(courses);
 
         // display the school info again
         System.out.println("#####################################################");

@@ -1,10 +1,11 @@
+/**
+ * Created by SEBASTIAN QUINTERO on 10/3/2017.
+ */
+
 package acadadminsystem_phase1;
 
 import java.util.ArrayList;
 
-/**
- * Created by Death on 10/3/2017.
- */
 public class DualEnrolledStudent extends Student {
     private String highSchoolName;
     private int highSchoolGrade;
@@ -42,7 +43,7 @@ public class DualEnrolledStudent extends Student {
      * @return
      */
     public String toString(){
-        return super.toString() + "High School Name: " + getHighSchoolName()
+        return super.toString() + "\nHigh School Name: " + getHighSchoolName()
                 + "\nHigh School Grade: " + getHighSchoolGrade();
     }
 

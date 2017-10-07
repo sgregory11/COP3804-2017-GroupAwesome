@@ -1,17 +1,12 @@
-package acadadminsystem_phase1;
-
-import java.util.Objects;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
  * @author David Santana
  */
+
+package acadadminsystem_phase1;
+
+import java.util.Objects;
+
 class CourseGrade {
     private Course courseTaken;
     private String letterGrade;
@@ -41,8 +36,8 @@ class CourseGrade {
      */
     @Override
     public String toString() {
-        return "CourseGrade{" + "courseTaken=" + courseTaken
-                + ", letterGrade=" + letterGrade + '}';
+        return  "\nCourse Number: " 
+                + courseTaken + "\nGrade Received:               "+ letterGrade;
     }
 
     /**
@@ -81,8 +76,4 @@ class CourseGrade {
     public void setLetterGrade(String letterGrade) {
         this.letterGrade = letterGrade;
     }
-    
-    
-    
-    
 }

@@ -1,16 +1,12 @@
-package acadadminsystem_phase1;
-
-import java.util.ArrayList;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 /**
  *
  * @author David Santana
  */
+
+package acadadminsystem_phase1;
+
+import java.util.ArrayList;
+
 public class Student extends Person {
 
     private int studentID;
@@ -36,16 +32,16 @@ public class Student extends Person {
 
     /**
      * Copy Constructor
-     *
      * @param student
      */
     public Student(Student student) {
-        /*super con*/
         super(student);
+        if (student !=null){
         studentID = student.getStudentID();
         dateOfAdmission = student.getDateOfAdmission();
         major = student.getMajor();
         coursesTaken = student.getCoursesTaken();
+        }
     }
 
     /**
@@ -55,7 +51,7 @@ public class Student extends Person {
     private String allCoursesTaken() {
         String temp = "";
         for (int i = 0; i < coursesTaken.size(); i++) {
-            temp += coursesTaken.get(i) + ", ";
+            temp += coursesTaken.get(i) + " ";
         }
         return temp;
     }
@@ -66,10 +62,11 @@ public class Student extends Person {
      */
     @Override
     public String toString() {
-        return "Student{" + "studentID="
-                + studentID + ", dateOfAdmission=" + dateOfAdmission
-                + ", major=" + major
-                + ", coursesTaken=" + allCoursesTaken() + '}';
+        return "Student ID:                   " + studentID 
+                + "\nMajor:                        " + major
+                + "\nAdmission Date:               " + dateOfAdmission
+                + "\n" + allCoursesTaken() 
+                + "\n========================================================\n";
     }
     
     /**

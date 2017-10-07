@@ -18,7 +18,17 @@ public class TransientStudent extends Student {
     //additional instance field
     private String homeInstitution;
 
-    //This constructor initializes the fields to the passed values.
+    /**
+     * This constructor initializes the fields to the passed values.
+     *
+     * @param firstN
+     * @param lastN
+     * @param stuId
+     * @param dateOfAd
+     * @param major
+     * @param courseT
+     * @param homeIns
+     */
     public TransientStudent(String firstN, String lastN, int stuId, String dateOfAd, String major, ArrayList<CourseGrade> courseT, String homeIns) {
         // call the constructor in the super class
         super(firstN, lastN, stuId, dateOfAd, major, courseT);
@@ -41,24 +51,38 @@ public class TransientStudent extends Student {
 
         }
     }
-    //The gethomeInstitution method returns a Transient object's home institution.
 
+    /**
+     * The gethomeInstitution method returns a Transient object's home
+     * institution.
+     *
+     * @return
+     */
     public String gethomeInstitution() {
         return homeInstitution;
     }
 
-    //The sethomeInstitution method stores a value in the home institution field.    
+    /**
+     * The sethomeInstitution method stores a value in the home institution
+     * field.
+     *
+     * @param homeIns
+     */
     public void sethomeInstitution(String homeIns) {
         homeInstitution = homeIns;
     }
 
-    //The toString method returns a string representing the state of a TransientStudent object.
+    /**
+     * The toString method returns a string representing the state of a
+     * TransientStudent object.
+     *
+     * @return
+     */
     public String toString() {
         // Create a string representing the object.
         String output = super.toString()
                 + "Home Institution: " + homeInstitution + "\n";
 
         return output;
-
     }
 }

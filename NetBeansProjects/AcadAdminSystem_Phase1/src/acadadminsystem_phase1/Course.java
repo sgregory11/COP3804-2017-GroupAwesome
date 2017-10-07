@@ -1,5 +1,5 @@
 /**
- * Created by Death on 10/3/2017.
+ * Created by SEBASTIAN QUINTERO on 10/3/2017.
  */
 package acadadminsystem_phase1;
 
@@ -10,9 +10,9 @@ public class Course {
 
     /**
      *
-     * @param cName Course Number
+     * @param cName acadadminsystem_phase1.Course Number
      * @param nCredits Number of Credits
-     * @param instruct Instructor Object
+     * @param instruct acadadminsystem_phase1.Instructor Object
      */
     public Course(String cName, int nCredits, Instructor instruct){
         courseNumber = cName;
@@ -51,7 +51,9 @@ public class Course {
      * @return
      */
     public String toString(){
-        return  "Course Number: " + getCourseNumber() + "\nNumber of Credits: " + getNumberOfCredits() + "\nInstructor: " + getInstructor();
+        return  "\nCourse Number:                " + getCourseNumber()
+                + "\nNumber of Credits:            " + getNumberOfCredits() 
+                + "\nInstructor Information \n------------------------------------------------------- " + getInstructor();
     }
 
 

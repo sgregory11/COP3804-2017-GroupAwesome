@@ -9,17 +9,32 @@ public abstract class Person {
 
     private String firstName;
     private String lastName;
-
+    
+    /**
+     * Contructor
+     * @param personFirstName
+     * @param personLastName 
+     */
     public Person(String personFirstName, String personLastName) {
         this.firstName = personFirstName;
         this.lastName = personLastName;
     }
-/*if person not null*/
-    public Person (Person person){
-        this.firstName = person.firstName;
-        this.lastName = person.lastName;
+    
+    /**
+     * Copy Constructor
+     * @param person 
+     */
+    public Person(Person person) {
+        if (person != null) {
+            this.firstName = person.firstName;
+            this.lastName = person.lastName;
+        }
     }
-
+    
+    /**
+     * Getters and Setters
+     * @return 
+     */
     public String getFirstName() {
         return firstName;
     }
@@ -37,9 +52,15 @@ public abstract class Person {
     }
 
     public String toString() {
-        return "Person{" + "First Name: " + firstName + " Last Name: " + lastName + '}';
+        return "\nFirst Name:                   " + firstName + 
+                "\nLast Name:                    " + lastName;
     }
-
+    
+    /**
+     * Equals Function
+     * @param objPerson
+     * @return 
+     */
     @Override
     public boolean equals(Object objPerson) {
         if (this == objPerson) {
