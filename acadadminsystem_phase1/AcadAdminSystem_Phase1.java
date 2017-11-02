@@ -9,7 +9,7 @@ import java.util.*;
 public class AcadAdminSystem_Phase1 {
 
     public static void main(String[] args) {
-
+        
         // create a School object with no students, instructors, or courses
         School mySchool = new School("Technical Institute of Miami", null, null, null);
 
@@ -88,7 +88,7 @@ public class AcadAdminSystem_Phase1 {
         courseGrade_5.setCourseTaken(course_5);
         courseGrade_6.setCourseTaken(course_6);
 
-        // changes to the Course objects should not affect the data inside the CourseGrade objects
+        // changes to the Course objects should affect the data inside the CourseGrade objects
         course_5.setCourseNumber("ENC1101");
         course_6.setCourseNumber("BIO1000");
 
@@ -117,7 +117,8 @@ public class AcadAdminSystem_Phase1 {
         transientStudentGrades.add(courseGrade_6);
 
         // create a Student object and display his information
-        Student student = new Student("John", "Smith", 1, "08/15/2015", "Information Technology", studentGrades);
+        Student student = new Student("John", "Smith", 1, "08/15/2015", 
+                                      "Information Technology", studentGrades);
         System.out.println("#####################################################");
         System.out.println("*                STUDENT INFORMATION                *");
         System.out.println("#####################################################");
@@ -125,8 +126,8 @@ public class AcadAdminSystem_Phase1 {
 
         // create a DualEnrolledStudent object and display his information
         DualEnrolledStudent dualEnrlStudent = new DualEnrolledStudent("Mary", "Morales",
-                2, "07/22/20014", "Undecided", dualEnrlStudentGrades, "Coral Park High School", 11);
-        System.out.println("#####################################################");
+                2, "07/22/20014", "Undecided", dualEnrlStudentGrades, "Coral Park High School", 11); 
+       System.out.println("#####################################################");
         System.out.println("*        DUAL ENROLLED STUDENT INFORMATION          *");
         System.out.println("#####################################################");
         System.out.println(dualEnrlStudent + "\n");
