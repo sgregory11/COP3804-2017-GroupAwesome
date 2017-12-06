@@ -263,7 +263,22 @@ public class InstructorLinkedList
      */
     public Instructor find(String instrFirstName, String instrLastName)
     {
-        // write implementation
+        Node Link = first;
+        
+        if (!isEmpty()){
+
+            while (!(Link.instructor.getFirstName().equals(instrFirstName) && Link.instructor.getLastName().equals(instrLastName)){
+
+                if (Link.next == null)){
+                    return null;
+                } else {
+                    Link = Link.next;
+                }
+            }
+        } else {
+            System.out.println("Empty LinkedList");
+        }
+        return Link;
     }
     
     
